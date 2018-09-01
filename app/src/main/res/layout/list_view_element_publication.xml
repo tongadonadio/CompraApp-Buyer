@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99d5cf">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="150dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPreview"
+                    android:layout_width="76dp"
+                    android:layout_height="82dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    app:layout_constraintHorizontal_bias="0.444"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:srcCompat="@drawable/gorila" />
+
+                <TableLayout
+                    android:layout_width="283dp"
+                    android:layout_height="82dp">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/textViewTitlePublicationRow"
+                            android:layout_width="100dp"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="8dp"
+                            android:text="TextView" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtProduct"
+                            android:layout_width="231dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="8dp"
+                            android:text="Quiero una computador con mucha memoria y disco"
+                            android:textSize="14sp"
+                            app:layout_constraintBottom_toTopOf="@+id/txtPrice" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/txtPrice"
+                            android:layout_width="100dp"
+                            android:layout_height="21dp"
+                            android:layout_marginStart="8dp"
+                            android:text="Ofertas: 5"
+                            android:textSize="14sp"
+                            app:layout_constraintVertical_bias="0.0" />
+                    </TableRow>
+
+                </TableLayout>
+            </LinearLayout>
+        </TableRow>
+
+    </TableLayout>
+
+</android.support.constraint.ConstraintLayout>

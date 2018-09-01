@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="compraapp.appbuyers.MainActivity">
+    <item
+        android:id="@+id/addPublicationMenu"
+        android:orderInCategory="100"
+        android:title="Agregar publicación"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/myPurchassesMenu"
+        android:orderInCategory="100"
+        android:title="Mis compras"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/editProfileMenu"
+        android:orderInCategory="100"
+        android:title="Editar Perfil"
+        app:showAsAction="withText" />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="Salir"
+        app:showAsAction="withText" />
+</menu>

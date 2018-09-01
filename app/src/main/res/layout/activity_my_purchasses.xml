@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99d5cf">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:text="Mis Compras"
+        android:textSize="35dp" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipPurchases"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ListView
+        android:id="@+id/lstVOffersMyPurchasses"
+        android:layout_width="match_parent"
+        android:layout_height="522dp"
+        android:paddingTop="10dp"
+        android:theme="?attr/actionBarPopupTheme" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
